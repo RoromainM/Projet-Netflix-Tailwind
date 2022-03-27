@@ -35,7 +35,7 @@ function pauseBd(){
 }
 
 
-
+// --------Video my list---------
 
 const thewitcher = document.getElementById("thewitcher")
 const thewitcherImg = document.getElementById('img-slide-my-list0')
