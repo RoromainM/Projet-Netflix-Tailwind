@@ -34,6 +34,25 @@ function pauseBd(){
     video.pause()
 }
 
+
+
+
+const thewitcher = document.getElementById("thewitcher")
+const thewitcherImg = document.getElementById('img-slide-my-list0')
+
+function playThewitcher(){
+    thewitcherImg.style.display = "none"
+    thewitcher.style.display = "block";
+    thewitcher.play()
+    
+}
+
+function pauseThewitcher(){
+    thewitcherImg.style.display = "block"
+    thewitcher.style.display = "none"
+    thewitcher.pause()
+}
+
 // ---------changement de background header--------------------
 
 window.addEventListener("scroll", function(){
