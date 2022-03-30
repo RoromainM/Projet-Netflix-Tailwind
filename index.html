@@ -107,12 +107,12 @@
             <p class="font-bold text-lg ml-16 my-2">My List</p>
 
             <!-- slide -->
-            <div class="flex space-x-1 pl-16x overflow-x-auto pl-16" id="MyList" onmouseenter="mouseEnter('left-button', 'right-button')" onmouseleave="mouseLeave('left-button', 'right-button')">
+            <div class="flex space-x-1 pl-16x overflow-x-auto pl-16 scroll-smooth" id="MyList" onmouseenter="mouseEnter('left-button', 'right-button')" onmouseleave="mouseLeave('left-button', 'right-button')">
 
                 <button onclick="goLeft('MyList')" class=" hidden z-index-50 text-3xl bg-gradient-to-r from-black to-black/30 hover:to-black/50 rounded-r w-12 h-32 absolute left-0" id="left-button"><i class="fas fa-angle-left"></i></button>
 
-                <div class="min-w-max w-56 h-32 zoom hover:scale-125 hover:z-20">
-                    <a href="#" onmouseover="playThewitcher()" onmouseout="pauseThewitcher()"><img id="img-slide-my-list0" src="./Assets/Images/myList/the-witcher.jpg" alt="The Witcher" class="flex w-56 h-32 cursor-pointer rounded hover:z-20 hover:overflow-visible"><video src="./Assets/video/the-witcher-video.mp4" type="video/mp4" class="hidden w-72 h-40 overflow-visible absolute transform-img"  id="thewitcher">The Witcher</video></a>
+                <div class="min-w-max w-56 h-32 zoom hover:z-20">
+                    <a href="#" onmouseover="playThewitcher()" onmouseout="pauseThewitcher()"><img id="img-slide-my-list0" src="./Assets/Images/myList/the-witcher.jpg" alt="The Witcher" class="flex w-56 h-32 cursor-pointer rounded hover:z-20 hover:overflow-visible hover:absolute transform-img"><video src="./Assets/video/the-witcher-video.mp4" type="video/mp4" class="hidden w-72 h-40 overflow-visible absolute transform-img muted"  id="thewitcher">The Witcher</video></a>
                 </div>
                 
                 <div class="min-w-max w-56 h-32 hover:scale-125">
@@ -166,7 +166,7 @@
 
         <section class="text-white mb-5">
             <p class="font-bold text-lg ml-16 my-2">Japanese anime</p>
-            <div class="flex space-x-1 pl-16x overflow-x-scroll pl-16" id="Anime" onmouseenter="mouseEnter('left-button2', 'right-button2')" onmouseleave="mouseLeave('left-button2', 'right-button2')">
+            <div class="flex space-x-1 pl-16x overflow-x-scroll pl-16 scroll-smooth" id="Anime" onmouseenter="mouseEnter('left-button2', 'right-button2')" onmouseleave="mouseLeave('left-button2', 'right-button2')">
                 
                 <button onclick="goLeft('Anime')" class="hidden z-index-50 text-3xl bg-gradient-to-r from-black to-black/30 hover:to-black/50 rounded-r w-12 h-32 absolute left-0" id="left-button2"><i class="fas fa-angle-left"></i></button>
 
@@ -217,7 +217,7 @@
 
         <section class="text-white mb-5">
             <p class="font-bold text-lg ml-16 my-2">Only on Netflix</p>
-            <div class="flex space-x-1 pl-16x overflow-x-scroll pl-16" id="OnNetlfix" onmouseenter="mouseEnter('left-button3', 'right-button3')" onmouseleave="mouseLeave('left-button3', 'right-button3')">
+            <div class="flex space-x-1 pl-16x overflow-x-scroll pl-16 scroll-smooth" id="OnNetlfix" onmouseenter="mouseEnter('left-button3', 'right-button3')" onmouseleave="mouseLeave('left-button3', 'right-button3')">
                 <button onclick="goLeft('OnNetlfix')" class="hidden z-index-50 text-3xl bg-gradient-to-r from-black to-black/30 hover:to-black/50 rounded-r w-12 h-32 absolute left-0" id="left-button3"><i class="fas fa-angle-left"></i></button>
                 <div class="min-w-max w-56 h-32 ">
                     <a href="#"><img src="./Assets/Images/onlyOnNetflix/vikings-valhalla.jpg" alt="HunterXhunter" id="img-slide-onlyOnNetflix0" class="flex w-56 h-32 cursor-pointer rounded"></a>
@@ -265,7 +265,7 @@
 
         <section class="text-white mb-5">
             <p class="font-bold text-lg ml-16 my-2">US Series</p>
-            <div class="flex space-x-1 pl-16x overflow-x-scroll pl-16" id="UsSeries" onmouseenter="mouseEnter('left-button4', 'right-button4')" onmouseleave="mouseLeave('left-button4', 'right-button4')">
+            <div class="flex space-x-1 pl-16x overflow-x-scroll pl-16 scroll-smooth" id="UsSeries" onmouseenter="mouseEnter('left-button4', 'right-button4')" onmouseleave="mouseLeave('left-button4', 'right-button4')">
                 <button onclick="goLeft('UsSeries')" class="hidden z-index-50 text-3xl bg-gradient-to-r from-black to-black/30 hover:to-black/50 rounded-r w-12 h-32 absolute left-0" id="left-button4"><i class="fas fa-angle-left"></i></button>
                 <div class="min-w-max w-56 h-32 ">
                     <a href="#"><img src="./Assets/Images/usSeries/breaking-bad.jpg" alt="breaking-bad" id="img-slide-usSeries0" class="flex w-56 h-32 cursor-pointer rounded"></a>
@@ -396,7 +396,7 @@
         
         <section class="text-white mb-5">
             <p class="font-bold text-lg ml-16 my-2">Netflix Originals</p>
-            <div class="flex space-x-1 pl-16x overflow-x-scroll pl-16" id="NetflixOriginals" onmouseenter="mouseEnter('left-button5', 'right-button5')" onmouseleave="mouseLeave('left-button5', 'right-button5')">
+            <div class="flex space-x-1 pl-16x overflow-x-scroll pl-16 scroll-smooth" id="NetflixOriginals" onmouseenter="mouseEnter('left-button5', 'right-button5')" onmouseleave="mouseLeave('left-button5', 'right-button5')">
                 <button onclick="goLeft('NetflixOriginals')" class="hidden z-index-50 text-3xl bg-gradient-to-r from-black to-black/30 hover:to-black/50 rounded-r w-12 h-32 absolute left-0 mt-32" id="left-button5"><i class="fas fa-angle-left"></i></button>
                 <div class="min-w-max w-56 h-full ">
                     <a href="#"><img src="./Assets/Images/thewitcher.png" alt="The Witcher" class="flex w-56 h-full cursor-pointer rounded"></a>
@@ -444,7 +444,7 @@
 
         <section class="text-white mb-5">
             <p class="font-bold text-lg ml-16 my-2">Top 10 on France</p>
-            <div class="flex space-x-1 pl-16x overflow-x-scroll pl-16" id="Top10" onmouseenter="mouseEnter('left-button6', 'right-button6')" onmouseleave="mouseLeave('left-button6', 'right-button6')">
+            <div class="flex space-x-1 pl-16x overflow-x-scroll pl-16 scroll-smooth" id="Top10" onmouseenter="mouseEnter('left-button6', 'right-button6')" onmouseleave="mouseLeave('left-button6', 'right-button6')">
                 <button onclick="goLeft('Top10')" class="hidden z-index-50 text-3xl bg-gradient-to-r from-black to-black/30 hover:to-black/50 rounded-r w-12 h-32 absolute left-0 mt-6" id="left-button6"><i class="fas fa-angle-left"></i></button>
                 <div class="min-w-max w-26 h-40 flex">
                     <img src="./Assets/Images/top_1.png" class="flex w-26 h-40 cursor-pointer">
@@ -483,7 +483,7 @@
 
             <section class="text-white mb-5">
                 <p class="font-bold text-lg ml-16 my-2">Fantasy and supernatural series</p>
-                <div class="flex space-x-1 pl-16x overflow-x-auto pl-16" id="FantasySuoernatural" onmouseenter="mouseEnter('left-button7', 'right-button7')" onmouseleave="mouseLeave('left-button7', 'right-button7')">
+                <div class="flex space-x-1 pl-16x overflow-x-auto pl-16 scroll-smooth" id="FantasySuoernatural" onmouseenter="mouseEnter('left-button7', 'right-button7')" onmouseleave="mouseLeave('left-button7', 'right-button7')">
                     <button onclick="goLeft('FantasySuoernatural')" class="hidden z-index-50 text-3xl bg-gradient-to-r from-black to-black/30 hover:to-black/50 rounded-r w-12 h-32 absolute left-0" id="left-button7"><i class="fas fa-angle-left"></i></button>
                     <div class="min-w-max w-56 h-32 ">
                         <a href="#"><img src="./Assets/Images/the-witcher.jpg" alt="The Witcher" class="flex w-56 h-32 cursor-pointer rounded"></a>
@@ -524,7 +524,7 @@
 
                 <section class="text-white mb-5">
                     <p class="font-bold text-lg ml-16 my-2">Critically acclaimed series</p>
-                    <div class="flex space-x-1 pl-16x overflow-x-auto pl-16" id="Crtically" onmouseenter="mouseEnter('left-button8', 'right-button8')" onmouseleave="mouseLeave('left-button8', 'right-button8')">
+                    <div class="flex space-x-1 pl-16x overflow-x-auto pl-16 scroll-smooth" id="Crtically" onmouseenter="mouseEnter('left-button8', 'right-button8')" onmouseleave="mouseLeave('left-button8', 'right-button8')">
                         <button onclick="goLeft('Crtically')" class="hidden z-index-50 text-3xl bg-gradient-to-r from-black to-black/30 hover:to-black/50 rounded-r w-12 h-32 absolute left-0" id="left-button8"><i class="fas fa-angle-left"></i></button>
                         <div class="min-w-max w-56 h-32 ">
                             <a href="#"><img src="./Assets/Images/fate-zero.jpg" class="flex w-56 h-32 cursor-pointer rounded"></a>
@@ -565,7 +565,7 @@
 
                 <section class="text-white mb-5">
                     <p class="font-bold text-lg ml-16 my-2">Series to watch without moderation</p>
-                    <div class="flex space-x-1 pl-16x overflow-x-auto pl-16" id="SerieWhithoutModeration" onmouseenter="mouseEnter('left-button9', 'right-button9')" onmouseleave="mouseLeave('left-button9', 'right-button9')">
+                    <div class="flex space-x-1 pl-16x overflow-x-auto pl-16 scroll-smooth" id="SerieWhithoutModeration" onmouseenter="mouseEnter('left-button9', 'right-button9')" onmouseleave="mouseLeave('left-button9', 'right-button9')">
                         <button onclick="goLeft('SerieWhithoutModeration')" class="hidden z-index-50 text-3xl bg-gradient-to-r from-black to-black/30 hover:to-black/50 rounded-r w-12 h-32 absolute left-0" id="left-button9"><i class="fas fa-angle-left"></i></button>
                         <div class="min-w-max w-56 h-32 ">
                             <a href="#"><img src="./Assets/Images/breaking-bad.jpg" class="flex w-56 h-32 cursor-pointer rounded"></a>
@@ -606,7 +606,7 @@
 
                 <section class="text-white mb-5">
                     <p class="font-bold text-lg ml-16 my-2">Anime to watch without moderation</p>
-                    <div class="flex space-x-1 pl-16x overflow-x-auto pl-16" id="AnimeWithoutModeration" onmouseenter="mouseEnter('left-button10', 'right-button10')" onmouseleave="mouseLeave('left-button10', 'right-button10')">
+                    <div class="flex space-x-1 pl-16x overflow-x-auto pl-16 scroll-smooth" id="AnimeWithoutModeration" onmouseenter="mouseEnter('left-button10', 'right-button10')" onmouseleave="mouseLeave('left-button10', 'right-button10')">
                         <button onclick="goLeft('AnimeWithoutModeration')" class="hidden z-index-50 text-3xl bg-gradient-to-r from-black to-black/30 hover:to-black/50 rounded-r w-12 h-32 absolute left-0" id="left-button10"><i class="fas fa-angle-left"></i></button>
                         <div class="min-w-max w-56 h-32 ">
                             <a href="#"><img src="./Assets/Images/eden-zero.jpg" class="flex w-56 h-32 cursor-pointer rounded"></a>
